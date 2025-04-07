@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tunneling Effect Simulator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h1 class="logo">Quantum Simulators</h1>
+    <ul class="nav-links">
+        <li><a href="index.html" onclick="showSection('tuning')">Tuning Effect</a></li>
+        <li><a href="particle_in_box.htm" onclick="showSection('particle')">Particle in a Box</a></li>
+        <li><a href="tunneling.html" onclick="showSection('tunneling')">Tunneling Effect</a></li>
+      </ul>
+  </nav>
+
+  <main class="container">
+    <h2 class="heading">Tunneling Effect Simulator</h2>
+
+    <div class="controls">
+      <label for="barrier-height">Barrier Height (V₀):</label>
+      <input type="range" id="barrier-height" min="1" max="20" value="10" />
+      <span id="barrier-height-value">10</span>
+
+      <label for="particle-energy">Particle Energy (E):</label>
+      <input type="range" id="particle-energy" min="1" max="20" value="7" />
+      <span id="particle-energy-value">7</span>
+
+      <button id="toggle-animation">Stop</button>
+    </div>
+
+    <canvas id="tunneling-canvas" width="800" height="300"></canvas>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="tunneling.js"></script>
+</body>
+</html>

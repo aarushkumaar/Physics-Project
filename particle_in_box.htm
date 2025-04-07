@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Particle in a Box Simulator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">🧪 Quantum Sim Lab</div>
+    <ul class="nav-links">
+        <li><a href="index.html" onclick="showSection('tuning')">Tuning Effect</a></li>
+        <li><a href="particle_in_box.htm" onclick="showSection('particle')">Particle in a Box</a></li>
+        <li><a href="tunneling.html" onclick="showSection('tunneling')">Tunneling Effect</a></li>
+      </ul>
+  </nav>
+
+  <div class="wrapper">
+    <h1 class="heading">Particle in a Box Simulator</h1>
+    <div class="signal-box">
+      <h2>Wavefunction Visualization</h2>
+      <canvas id="box-canvas" width="600" height="200"></canvas>
+      <div class="controls">
+        <label for="quantum-number">Quantum Number (n):</label>
+        <input type="range" id="quantum-number" min="1" max="10" value="1" />
+        <span id="quantum-number-value">1</span>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="particle.js"></script>
+</body>
+</html>

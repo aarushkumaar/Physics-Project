@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tuning Effect Simulator</title>
+  <link rel="stylesheet" href="styles.css" />
+  <nav class="navbar">
+    <div class="logo">🧪 Quantum Sim Lab</div>
+    <ul class="nav-links">
+      <li><a href="index.html" onclick="showSection('tuning')">Tuning Effect</a></li>
+      <li><a href="particle_in_box.htm" onclick="showSection('particle')">Particle in a Box</a></li>
+      <li><a href="tunneling.html" onclick="showSection('tunneling')">Tunneling Effect</a></li>
+    </ul>
+  </nav>
+  
+</head>
+<body>
+  <div class="wrapper">
+    <h1 class="heading">🎧 Tuning Effect Simulator 🎵</h1>
+
+    <div class="container">
+      <div class="signal-box">
+        <h2>Original Signal</h2>
+        <canvas id="signal-canvas" width="600" height="200"></canvas>
+        <div class="controls">
+          <label for="frequency">Frequency:</label>
+          <input type="range" id="frequency" min="1" max="100" value="10">
+          <span id="frequency-value">10 Hz</span>
+        </div>
+      </div>
+
+      <div class="signal-box">
+        <h2>Tuned Signal</h2>
+        <canvas id="tuned-signal-canvas" width="600" height="200"></canvas>
+        <div class="controls">
+          <label for="tuning-frequency">Tuning Frequency:</label>
+          <input type="range" id="tuning-frequency" min="1" max="100" value="15">
+          <span id="tuning-frequency-value">15 Hz</span>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Created with ❤️ for Physics Projects</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
